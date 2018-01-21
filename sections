@@ -1,0 +1,169 @@
+UNIX permissions
+    user:group:other
+    read write execute
+        files vs. directories
+    symbolic vs. octal
+    umask
+        -S
+manipulating your environment
+    rm
+        -r
+        -f
+        -v
+        -i
+    mkdir
+    rmdir
+        "safe"
+    touch
+    chmod
+        octal vs. symbolic
+        -R
+    chown
+        user:group
+        -R
+getting around
+    tab completion
+        speed
+        avoid typos
+        handle weird filenames
+    cd
+        cd ..
+        cd -
+    ls
+        . and ..
+        -l
+        -A
+        -rt
+        -h
+            pros and cons
+        -R
+        -s
+        --color
+        -1
+    tree -dx -L 3 --noreport
+repeating yourself
+    ctrl-r
+    history
+    !<N>
+    !!
+    !?
+    !$
+aliases
+    as shortcuts
+        tstamp = 'date +"%D %T"'
+        fill = 'cut -c1-`tput cols`'
+        tail1 = 'tail -q -n 1`
+        nf = 'awk "{print $NF}"'
+        py3 = 'source activate py3'
+        deconda = 'source deactivate'
+    as defaults
+        ls -lArt --color=auto
+        grep --color=auto -d skip
+        df -hPT
+        tree -dx --noreport
+        du -B 1G (overridable)
+        hostname -s
+        watch -n 60
+getting help
+    --help
+    man
+    help
+    e.g. ls, alias, umask (man sections)
+looking at text
+    cat
+    more or less
+    head
+    tail
+        -f
+    grep
+        -f
+        -i
+        -w
+        -v
+        -m
+        -n
+        -h
+        -o
+        -r
+        -l
+        -L
+        -c
+        -A
+        -B
+        --color=
+    awk
+        print $1
+        print $NF
+        -F','
+    sed
+        s/match/replace/g
+        s/match//g
+        s#match#replace#g
+    tac
+    diff
+        -y
+        --suppress-common-lines
+batch processing
+    variables
+        $var
+        echo $var
+    for
+    $()
+    while
+        true
+    sleep
+    ${var:match:replace}
+    (())
+    if
+        [[ ]]
+        fi
+    xargs
+        example
+verbosity
+    rm -v
+    chmod -c
+    chown -c
+the world around you
+    id 
+    env
+    lscpu
+    uptime
+    uname -a
+    cat /etc/redhat-release
+    cat /etc/debian_version
+    who
+    finger
+    df
+        -hPT
+    du
+        -h
+        -B 1G
+        -d 1
+        -t 10m
+        -s
+    htop
+    dstat
+    time
+    watch
+        -n
+for scripting:
+    basename
+    dirname
+    hostname -s
+    mkdir -p
+    mkdir -m <mode>
+    rmdir -p
+    date
+further reading:
+    md5sum
+    find
+    /usr/bin/time
+    sort
+    uniq
+out of scope:
+    getent
+    host
+    pushd / popd 
+    ls
+        -s
+        order of args

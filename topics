@@ -1,0 +1,17 @@
+#TODO split off command line foo
+
+functions
+scripts
+    bash <file>
+    chmod +x <file>
+    ./<file>
+PATH
+    .
+    ::
+expand_aliases
+local
+source
+ssh
+screen
+tmux
+prompt
