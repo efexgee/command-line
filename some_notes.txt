@@ -1,0 +1,18 @@
+Falko Goettsch [10:09] 
+`tail` is a command that shows the last few lines of a file. The opposite of `head`. You can change the number of lines with `-N`. You can also use `+N` to say "all the lines starting at line N". Basically you are specifying the number of lines by indexing from the back... like `list[-2]` in Python. So we used that to just cut off the header lines on the `qstat` output.
+
+
+[10:09] 
+`qstat -s p` and `qstat -s r` show waiting and running jobs, respectively. It has more options.
+
+
+[10:10] 
+We used `awk` just to cut the output into columns. `print $1` tells it to print the first column. By default, `awk` uses "any number of spaces" as a separator and intelligently ignore the leading spaces at the beginning of the line.
+
+
+[10:12] 
+The `for` loop is like a for loop in any language. The weird thing is that in `bash` you have to enclose the commands you want to execute (the block) between the special words `do` and `done`.  In Python you do blocks by indenting the lines, in C you would use `{}`... I don't know R or Stata.
+
+
+[10:13] 
+The "backticks" mean "run whatever is in between the backticks, grab that output and replace the whole backtick thing with that output. So `cat file.txt`  replaces that command with the lines inside the file. Then we iterated over them via the for loop.

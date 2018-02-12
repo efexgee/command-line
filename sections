@@ -1,11 +1,11 @@
-UNIX permissions
+UNIX file permissions
     user:group:other
     read write execute
         files vs. directories
     symbolic vs. octal
     umask
         -S
-manipulating your environment
+manipulating the file system
     rm
         -r
         -f
@@ -21,6 +21,11 @@ manipulating your environment
     chown
         user:group
         -R
+    cp
+        -p
+        -r
+    mv
+        -v
 getting around
     tab completion
         speed
@@ -29,6 +34,10 @@ getting around
     cd
         cd ..
         cd -
+        ~
+        ~<user>
+        cd
+    pwd
     ls
         . and ..
         -l
@@ -41,6 +50,7 @@ getting around
         --color
         -1
     tree -dx -L 3 --noreport
+    which
 repeating yourself
     ctrl-r
     history
@@ -69,12 +79,40 @@ getting help
     man
     help
     e.g. ls, alias, umask (man sections)
+the network
+    ssh
+        ssh <host>
+        ssh <user>@<host>
+        ssh <host> <command>
+        -q
+        -v -vv -vvv
+    scp
+        -p
+        -r
+    wget
+    ping
+    host
+process control
+    ^Z
+    fg
+    bg
+    jobs
+        -l
+    %1
+    &
+ubiquitous flags
+    --help
+    -v
+    --version
 looking at text
     cat
     more or less
     head
     tail
         -f
+    wc
+        -l
+        -L
     grep
         -f
         -i
@@ -103,6 +141,7 @@ looking at text
     diff
         -y
         --suppress-common-lines
+    colordiff?
 batch processing
     variables
         $var
@@ -117,15 +156,30 @@ batch processing
     if
         [[ ]]
         fi
+        else
     xargs
         example
 verbosity
     rm -v
     chmod -c
     chown -c
+your environment:
+    .bashrc
+    .bash_profile
+    PATH
+        adding
+        .
+        ::
+    source
+        .
+    environment variables
+        HOME
+        USER
+    env
+    prompt
+        PS1
 the world around you
     id 
-    env
     lscpu
     uptime
     uname -a
@@ -146,7 +200,11 @@ the world around you
     time
     watch
         -n
-for scripting:
+for programming:
+    running a script
+        bash <file>
+        chmod +x
+        ./<file>
     basename
     dirname
     hostname -s
@@ -154,16 +212,24 @@ for scripting:
     mkdir -m <mode>
     rmdir -p
     date
+    expand_aliases
+    functions
+        local
 further reading:
     md5sum
-    find
     /usr/bin/time
     sort
     uniq
+tools which deserve their own thing:
+    git
+    conda
 out of scope:
+    rsync
+    find
+    screen
     getent
     host
     pushd / popd 
-    ls
+    ln
         -s
         order of args
