@@ -1,0 +1,152 @@
+UNIX file permissions
+    user group other
+    read write execute
+        files vs. directories
+        running a script
+            bash <file>
+            chmod +x
+            ./<file>
+    chmod
+        octal vs. symbolic
+        -R
+    umask
+        -S
+
+manipulating the file system
+    rm
+        -r (don't use unless you need to; use rmdir)
+        -f (don't use unless you can explain why you need to)
+        -i
+    rmdir
+        empty directories only, so it's "safe"
+        Principle of Least Hammer
+    mkdir
+        -p
+        -m <mode>
+    chown
+        <user>
+        <user>:<group>
+        -R
+    cp
+        -p
+        -r
+    mv
+    touch
+
+    verbosity
+        rm -v
+        mv -v
+        chmod -c
+        chown -c
+
+getting help
+    --help
+    man
+    help
+    e.g. ls, alias, umask (man sections)
+
+ubiquitous flags
+    --help
+    -v
+    --version
+
+getting around
+    tab completion
+        speed
+        avoid typos
+        handle weird filenames
+    cd
+        cd ..
+        ~
+            ~<user>
+            cd
+        cd -
+    pwd
+    ls
+        . and ..
+        -l
+        -A
+        -rt
+        -h
+            pros and cons
+        -R
+        -s
+        --color
+        -1
+    tree -dx -L 3 --noreport
+    which
+
+repeating yourself
+    up arrow / down arrow
+    left arrow / right arrow
+    Home / End
+    ctrl-r
+    history
+    !<N>
+    !!
+    !?
+    !$
+
+looking at text
+    cat
+    less (or more)
+    head
+    tail
+        -f
+    wc
+        -l
+        -L
+    grep
+        -f
+        -i
+        -w
+        -v
+        -m
+        -n
+        -h
+        -o
+        -r
+        -l
+        -L
+        -c
+        -A
+        -B
+        --color=
+    tac
+
+aliases
+    as shortcuts
+        tstamp = 'date +"%D %T"'
+        fill = 'cut -c1-`tput cols`'
+        tail1 = 'tail -q -n 1`
+        nf = 'awk "{print $NF}"'
+        py3 = 'source activate py3'
+        deconda = 'source deactivate'
+    as defaults
+        ls -lArt --color=auto
+        grep --color=auto -d skip
+        df -hPT
+        tree -dx --noreport
+        du -B 1G (overridable)
+        hostname -s
+        watch -n 60
+
+batch processing
+    variables
+        $var
+        echo $var
+    for
+    $()
+        `` (don't use)
+    while
+        true
+    sleep
+    ${var:match:replace}
+    (())
+    if
+        [[ ]]
+        fi
+        else
+    && or || (don't use)
+    xargs
+        example
