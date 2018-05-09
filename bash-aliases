@@ -1,0 +1,16 @@
+aliases
+    as shortcuts
+        tstamp = 'date +"%D %T"'
+        fill = 'cut -c1-`tput cols`'
+        tail1 = 'tail -q -n 1`
+        nf = 'awk "{print $NF}"'
+        py3 = 'source activate py3'
+        deconda = 'source deactivate'
+    as defaults
+        ls -lArt --color=auto
+        grep --color=auto -d skip
+        df -hPT
+        tree -dx --noreport
+        du -B 1G (overridable)
+        hostname -s
+        watch -n 60

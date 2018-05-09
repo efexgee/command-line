@@ -1,0 +1,23 @@
+Do
+--
+8 writing for-loops on the command line (i.e. automating repetitive tasks)
+8 writing bash functions
+5 using bash aliases
+
+Quick
+-----
+8 good flags to know for common commands
+5 common commands for inspecting your surroundings
+1 making use of the command history
+1 getting help from the command line
+1 commands for moving around paths and looking around paths
+
+Requires Prep
+-------------
+10 environment variables
+
+Don't Do
+--------
+4 tips for writing scripts
+4 process control (processes running in the background)
+3 the find command

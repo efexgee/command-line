@@ -1,0 +1,20 @@
+batch processing
+    variables
+        $var
+        echo $var
+    for
+    $()
+        `` (don't use)
+    while
+        true
+    sleep
+    ${var:match:replace}
+    (())
+    if
+        [[ ]]
+        fi
+        else
+    && and || (don't use)
+    xargs
+        example
+    IFS

@@ -1,0 +1,90 @@
+UNIX file permissions
+    umask
+        -S
+manipulating the file system
+    rm
+        -r
+        -f
+        -v
+        -i
+    rmdir
+        "safe"
+    chmod
+        octal vs. symbolic
+        -R
+    chown
+        user:group
+        -R
+    cp
+        -p
+        -r
+    mv
+        -v
+getting around
+    ls
+        -l
+        -A
+        -rt
+        -h
+            pros and cons
+        -R
+        -s
+        --color
+        -1
+    tree -dx -L 3 --noreport
+the network
+    ssh
+        -q
+        -v -vv -vvv
+    scp
+        -p
+        -r
+looking at text
+    tail
+        -f
+    wc
+        -l
+        -L
+    grep
+        -f
+        -i
+        -w
+        -v
+        -m
+        -n
+        -h
+        -o
+        -r
+        -l
+        -L
+        -c
+        -A
+        -B
+        --color=
+    diff
+        -y
+        --suppress-common-lines
+verbosity
+    rm -v
+    chmod -c
+    chown -c
+the world around you
+    df
+        -hPT
+    du
+        -h
+        -B 1G
+        -d 1
+        -t 10m
+        -s
+    watch
+        -n
+for programming:
+    hostname -s
+    mkdir -p
+    mkdir -m <mode>
+    rmdir -p
+ubiquitous flags
+    --help
+    -v
+    --version

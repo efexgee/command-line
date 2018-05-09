@@ -1,0 +1,16 @@
+for programming:
+    running a script
+        bash <file>
+        chmod +x
+        ./<file>
+    basename
+    dirname
+    hostname -s
+    mkdir -p
+    mkdir -m <mode>
+    rmdir -p
+    date
+    expand_aliases
+    functions
+        local
+        return not exit

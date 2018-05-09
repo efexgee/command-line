@@ -1,0 +1,25 @@
+getting around
+    tab completion
+        speed
+        avoid typos
+        handle weird filenames
+    cd
+        cd ..
+        cd -
+        ~
+        ~<user>
+        cd
+    pwd
+    ls
+        . and ..
+        -l
+        -A
+        -rt
+        -h
+            pros and cons
+        -R
+        -s
+        --color
+        -1
+    tree -dx -L 3 --noreport
+    which
